@@ -112,7 +112,7 @@ export default function BookDetailPage({ books, favorites, onToggleFavorite }) {
 
         <div className="space-y-8">
           <div className="space-y-4">
-            <p className="font-mono-label text-xs uppercase tracking-[0.28em] text-[var(--app-muted)]">Spotlight detail</p>
+            <p className="font-mono-label text-xs uppercase tracking-[0.28em] text-[var(--app-muted)]">Detail Buku</p>
             <h1 className="font-display max-w-3xl text-5xl font-black tracking-tight sm:text-6xl">{detailedBook.title}</h1>
             <p className="text-lg text-[var(--app-muted)]">{detailedBook.author}</p>
             <div className="flex items-center gap-2 text-[var(--app-text)]">
@@ -148,7 +148,7 @@ export default function BookDetailPage({ books, favorites, onToggleFavorite }) {
           </div>
 
           <div className="space-y-3">
-            <p className="font-mono-label text-xs uppercase tracking-[0.28em] text-[var(--app-muted)]">Subjek</p>
+            <p className="font-mono-label text-xs uppercase tracking-[0.28em] text-[var(--app-muted)]">Topik</p>
             <div className="flex flex-wrap gap-2">
               {(detailedBook.subjects || []).map((subject) => (
                 <span key={subject} className="rounded-full border border-[var(--app-border)] bg-[var(--app-surface)] px-4 py-2 text-sm text-[var(--app-text)] backdrop-blur-xl">
@@ -171,7 +171,7 @@ export default function BookDetailPage({ books, favorites, onToggleFavorite }) {
           </div>
           
           <Link to="/" className="inline-flex rounded-full border border-[var(--app-border)] bg-[var(--app-surface)] px-5 py-3 text-sm font-medium text-[var(--app-text)] backdrop-blur-xl transition-colors hover:bg-[var(--app-surface-strong)]">
-            Kembali ke katalog
+            Kembali ke beranda
           </Link>
         </div>
       </div>

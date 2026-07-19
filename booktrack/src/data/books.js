@@ -2,10 +2,10 @@ export const BOOKS = [];
 
 // 4 Kategori inti yang terbukti 100% stabil dengan gambar valid di Subject API
 export const GENRE_SECTIONS = [
-  { key: 'Trending', label: 'Trending' },
-  { key: 'Classics', label: 'Classics' },
-  { key: 'Philosophy', label: 'Philosophy' },
-  { key: 'Biography', label: 'Biography' },
+  { key: 'Trending', label: 'Populer' },
+  { key: 'Classics', label: 'Klasik' },
+  { key: 'Philosophy', label: 'Filsafat' },
+  { key: 'Biography', label: 'Biografi' },
 ];
 
 const getSubjectForGenre = (genreKey) => {
